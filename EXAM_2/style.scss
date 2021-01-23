@@ -143,7 +143,20 @@ body {
                                     outline: none;
                                 }
     
+                                // &::before {
+                                //     content: '';
+                                //     display: inline-block;
+                                //     height:8px;
+                                //     width: 8px;
+                                //     vertical-align: middle;
+                                //     border-radius:50%;
+                                //     color: white;
+                                //     background-color:transparent;
+                                //     margin-right:5px;
+                                // }
+    
                                 &.active::before {
+                                    // list-style-type: none;
                                     content: '';
                                     display: inline-block;
                                     height: 0.417vw;
@@ -160,7 +173,7 @@ body {
                                     text-decoration: none;
                                     color: white;
                                     text-transform: uppercase;
-                                    font-family: Gotham-Book, sans-serif;
+                                    font-family: Gotham-Book;
                                     font-size: 0.729vw;
                                     padding-left: 0.160vw;
                                 }
@@ -198,7 +211,7 @@ body {
 
                 &>h1 {
                     font-size: 4.167vw;
-                    font-family: Gotham-Bold, sans-serif;
+                    font-family: Gotham-Bold;
                     color: white;
                     text-transform: uppercase;
                     letter-spacing: 0.469vw;
@@ -278,71 +291,33 @@ body {
                                         transform: rotate(45deg);
                                     }
                                     &:checked ~ .menu__list {
-                                        display: -webkit-box !important;
-                                        display: -ms-flexbox !important;
                                         display: flex !important;
-                                        -webkit-box-orient: vertical;
-                                        -webkit-box-direction: normal;
-                                            -ms-flex-direction: column;
-                                                flex-direction: column;
+                                        flex-direction: column;
                                         list-style-type: none;
                                         position: absolute;
                                         top: 0%;
                                         left: 0px;
                                         background-color: rgba(17, 45, 95, 0.8);
-                                        -webkit-box-align: center;
-                                            -ms-flex-align: center;
-                                                align-items: center;
-                                        padding: 0.833vw 0;
+                                        // height: 18%;
+                                        align-items: center;
+                                        padding: 14px 0px;
 
-                                        &>.list__item {
-                                            list-style-position: inside;
-                                            color: white;
-                                            position: relative;
-                
-                                            &.active::before {
-                                                content: '';
-                                                height: 1.417vw !important;
-                                                width: 1.417vw !important;
-                                                left: -13% !important;
-
-                                                .list__item:nth-child(2) {
-                                                    margin: 0.521vw 0;
-                                                }
-                                                .list__item:last-child {
-                                                    margin: 0.521vw 0 0;
-                                                }
-        
-                                                .item__link {
-                                                    font-size: 4.729vw;
-                                                    color: lightblue;
-                                                }
-                                            }
+                                        .list__item:nth-child(2) {
+                                            margin: 0.521vw 0;
                                         }
-
-                                        // .list__item.active::before {
-                                        //     content: '';
-                                        //     height: 1.417vw !important;
-                                        //     width: 1.417vw !important;
-                                        //     left: -13% !important;
-                                        // }
-                                        // .list__item:nth-child(2) {
-                                        //     margin: 0.521vw 0;
-                                        // }
-                                        // .list__item:last-child {
-                                        //     margin: 0.521vw 0 0;
-                                        // }
-
-                                        // .item__link {
-                                        //     font-size: 4.729vw;
-                                        //     color: lightblue;
-                                        // }
+                                        .list__item:last-child {
+                                            margin: 0.521vw 0 0;
+                                        }
+                                        .item__link {
+                                            font-size: 4.729vw;
+                                            color: lightblue;
+                                        }
                                     }
                                 }
                                 .menu__list {
                                     display: none;
-                                }
-                                
+                                    }
+
                                 &>.menu__btn {
                                     display: flex;
                                     align-items: center;
@@ -406,6 +381,9 @@ body {
                 }
             }
 
+
+
+        
         // GALLERY
         &>.wrapper__gallery {
             width: 100%;
@@ -429,7 +407,7 @@ body {
                     &>.header__title {
                         font-size: 2.292vw;
                         font-weight: 500;
-                        font-family: Gotham-Medium, sans-serif;
+                        font-family: Gotham-Medium;
                         color: #2c4058;
                         text-transform: uppercase;
                     }
@@ -511,7 +489,7 @@ body {
                     background-color: transparent;
                     border: 1px solid black;
                     font-size: 0.729vw;
-                    font-family: Gotham-Book, sans-serif;
+                    font-family: Gotham-Book;
                     
                     &:focus {
                         outline: none;
@@ -603,7 +581,7 @@ body {
     
                     &>.contacts__title {
                         font-size: 2.292vw;
-                        font-family: Gotham-Medium, sans-serif;
+                        font-family: Gotham-Medium;
                         text-transform: uppercase;
                         margin: 1.563vw 0 2.125vw;
                     }
@@ -620,7 +598,7 @@ body {
                         z-index: 20;
                         
                         &>.info__descr {
-                            font-family: Gotham-Book, sans-serif;
+                            font-family: Gotham-Book;
                             font-size: 0.938vw;
     
                             &>p>a {
@@ -668,7 +646,7 @@ body {
                                 }
     
                                 &::placeholder {
-                                    font-family: Gotham-Book, sans-serif;
+                                    font-family: Gotham-Book;
                                     font-size: 0.938vw;
                                     color: #d5d9de;
                                 }
@@ -682,7 +660,7 @@ body {
                                     width: 7.292vw;
                                     height: 2.604vw;
                                     font-size: 0.729vw;
-                                    font-family: Gotham-Book, sans-serif;
+                                    font-family: Gotham-Book;
                                     text-transform: uppercase;
 
                                     &:hover {
@@ -842,7 +820,7 @@ body {
                     margin-top: 2.083vw;
                     color: white;
                     font-size: 0.729vw;
-                    font-family: Gotham-Book, sans-serif;
+                    font-family: Gotham-Book;
 
                     &>span:nth-child(2) {
                         color: #b1cfff;
